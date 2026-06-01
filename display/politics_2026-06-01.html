@@ -14,11 +14,15 @@
   .politics-card { background: linear-gradient(135deg, #fff, #fff5f5); border-radius: 10px; padding: 16px; margin-bottom: 14px; border-left: 4px solid #c62828; display: flex; gap: 12px; }
   .politics-num { display: inline-flex; align-items: center; justify-content: center; min-width: 28px; height: 28px; border-radius: 50%; background: #c62828; color: #fff; font-size: 14px; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
   .politics-body { flex: 1; }
-  .politics-category { margin-bottom: 6px; }
+  .politics-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
   .cat-tag { display: inline-block; padding: 2px 10px; border-radius: 12px; background: #ffebee; color: #c62828; font-size: 12px; font-weight: 600; }
-  .politics-title { font-size: 16px; font-weight: 700; color: #b71c1c; margin-bottom: 8px; }
-  .politics-content { font-size: 15px; color: #444; line-height: 1.9; margin-bottom: 8px; }
-  .politics-point { background: #fff9c4; border-radius: 6px; padding: 8px 10px; font-size: 14px; color: #795548; border-left: 3px solid #ffa000; }
+  .freq-tag { display: inline-block; padding: 2px 8px; border-radius: 10px; background: #c62828; color: #fff; font-size: 11px; font-weight: 600; }
+  .politics-title { font-size: 16px; font-weight: 700; color: #b71c1c; margin-bottom: 10px; }
+  .politics-content { font-size: 15px; color: #444; line-height: 1.9; margin-bottom: 10px; }
+  .politics-mnemonic { background: #e8f5e9; border-radius: 6px; padding: 8px 10px; font-size: 14px; color: #2e7d32; border-left: 3px solid #4caf50; margin-bottom: 8px; line-height: 1.7; }
+  .mnemonic-label { display: inline-block; background: #4caf50; color: #fff; padding: 1px 6px; border-radius: 4px; font-size: 11px; font-weight: 700; margin-right: 6px; vertical-align: middle; }
+  .politics-confusion { background: #fff3e0; border-radius: 6px; padding: 8px 10px; font-size: 14px; color: #e65100; border-left: 3px solid #ff9800; line-height: 1.7; }
+  .confusion-label { display: inline-block; background: #ff9800; color: #fff; padding: 1px 6px; border-radius: 4px; font-size: 11px; font-weight: 700; margin-right: 6px; vertical-align: middle; }
   .motivation { text-align: center; margin-top: 24px; padding: 14px 12px; background: linear-gradient(135deg, #ffebee, #fff3e0); border-radius: 10px; font-size: 14px; color: #c62828; font-weight: 500; border: 1px dashed #ef9a9a; }
   .footer { text-align: center; margin-top: 20px; padding: 12px; font-size: 12px; color: #bbb; }
 </style>
@@ -26,65 +30,125 @@
 <body>
 <div class="card">
   <div class="header">
-    <div class="title">政治理论精练 · 公考必背</div>
+    <div class="title">政治理论精练 · 行测必背</div>
     <div class="subtitle">2026-06-01  |  每日6条 · 筑牢理论根基</div>
   </div>
 
     <div class="politics-card">
       <div class="politics-num">1</div>
       <div class="politics-body">
-        <div class="politics-category"><span class="cat-tag">马克思主义哲学</span></div>
-        <div class="politics-title">唯物辩证法中的对立统一规律</div>
-        <div class="politics-content">对立统一规律是唯物辩证法的核心，揭示了事物发展的动力和源泉。矛盾的普遍性和特殊性、主要矛盾和次要矛盾、矛盾的主要方面和次要方面等都是这一规律的具体表现。在实践中，要善于抓住主要矛盾，解决关键问题。</div>
-        <div class="politics-point">掌握对立统一规律的基本内容及其在实际工作中的应用</div>
+        <div class="politics-header-row">
+          <span class="cat-tag">马克思主义哲学核心原理</span>
+          <span class="freq-tag">高频</span>
+        </div>
+        <div class="politics-title">物质与意识的辩证关系</div>
+        <div class="politics-content">物质决定意识，意识对物质具有反作用。考试常以选择题形式考察两者之间的关系。</div>
+        <div class="politics-mnemonic">
+          <span class="mnemonic-label">速记</span>
+          物主意识客，意反物作用。
+        </div>
+        <div class="politics-confusion">
+          <span class="confusion-label">避坑</span>
+          易与唯心主义混淆，唯心主义认为意识决定物质。
+        </div>
       </div>
     </div>
     <div class="politics-card">
       <div class="politics-num">2</div>
       <div class="politics-body">
-        <div class="politics-category"><span class="cat-tag">毛泽东思想</span></div>
-        <div class="politics-title">新民主主义革命理论</div>
-        <div class="politics-content">新民主主义革命理论是中国共产党领导人民进行反帝反封建斗争的重要理论成果。它主张建立无产阶级领导下的各革命阶级联合专政，并通过新民主主义走向社会主义。该理论强调了中国革命的特殊性质和路径。</div>
-        <div class="politics-point">理解新民主主义革命与社会主义革命的区别及联系</div>
+        <div class="politics-header-row">
+          <span class="cat-tag">毛中特易混概念</span>
+          <span class="freq-tag">高频</span>
+        </div>
+        <div class="politics-title">新民主主义革命与社会主义革命的区别</div>
+        <div class="politics-content">新民主主义革命是无产阶级领导的、人民大众的、反对帝国主义、封建主义和官僚资本主义的革命；社会主义革命则是消灭生产资料私有制，建立社会主义制度。</div>
+        <div class="politics-mnemonic">
+          <span class="mnemonic-label">速记</span>
+          新民革三反，社革私转公。
+        </div>
+        <div class="politics-confusion">
+          <span class="confusion-label">避坑</span>
+          容易混淆两者的革命性质和目标，新民主主义革命是资产阶级性质的，而社会主义革命是无产阶级性质的。
+        </div>
       </div>
     </div>
     <div class="politics-card">
       <div class="politics-num">3</div>
       <div class="politics-body">
-        <div class="politics-category"><span class="cat-tag">中国特色社会主义理论体系</span></div>
-        <div class="politics-title">科学发展观的核心理念</div>
-        <div class="politics-content">科学发展观由胡锦涛同志提出，其核心是以人为本，基本要求是全面协调可持续发展，根本方法是统筹兼顾。这一理论强调经济发展与社会进步相统一，注重经济、政治、文化、社会建设的协调发展。</div>
-        <div class="politics-point">牢记科学发展观的内涵及其在中国现代化进程中的地位</div>
+        <div class="politics-header-row">
+          <span class="cat-tag">新时代思想数字考点</span>
+          <span class="freq-tag">高频</span>
+        </div>
+        <div class="politics-title">四个意识、四个自信、两个维护</div>
+        <div class="politics-content">四个意识：政治意识、大局意识、核心意识、看齐意识；四个自信：道路自信、理论自信、制度自信、文化自信；两个维护：坚决维护习近平总书记党中央的核心、全党的核心地位，坚决维护党中央权威和集中统一领导。</div>
+        <div class="politics-mnemonic">
+          <span class="mnemonic-label">速记</span>
+          四意四信双维，牢记心中。
+        </div>
+        <div class="politics-confusion">
+          <span class="confusion-label">避坑</span>
+          容易记混四个意识和四个自信的具体内容，注意区分。
+        </div>
       </div>
     </div>
     <div class="politics-card">
       <div class="politics-num">4</div>
       <div class="politics-body">
-        <div class="politics-category"><span class="cat-tag">习近平新时代中国特色社会主义思想</span></div>
-        <div class="politics-title">十四个坚持</div>
-        <div class="politics-content">“十四个坚持”是习近平新时代中国特色社会主义思想的重要组成部分，包括坚持党对一切工作的领导、坚持以人民为中心的发展思想等内容。这些原则指导着当前中国的政治实践和社会发展。</div>
-        <div class="politics-point">熟悉“十四个坚持”的具体内容及其对中国未来发展的影响</div>
+        <div class="politics-header-row">
+          <span class="cat-tag">二十大报告关键词/新提法</span>
+          <span class="freq-tag">高频</span>
+        </div>
+        <div class="politics-title">中国式现代化</div>
+        <div class="politics-content">中国式现代化是中国共产党领导的社会主义现代化，既有各国现代化的共同特征，更有基于自己国情的中国特色。</div>
+        <div class="politics-mnemonic">
+          <span class="mnemonic-label">速记</span>
+          中国式现代，党领特色显。
+        </div>
+        <div class="politics-confusion">
+          <span class="confusion-label">避坑</span>
+          容易与中国梦混淆，中国梦是实现中华民族伟大复兴的总目标。
+        </div>
       </div>
     </div>
     <div class="politics-card">
       <div class="politics-num">5</div>
       <div class="politics-body">
-        <div class="politics-category"><span class="cat-tag">党的二十大精神</span></div>
-        <div class="politics-title">全面建设社会主义现代化国家</div>
-        <div class="politics-content">党的二十大报告明确提出了全面建设社会主义现代化国家的战略目标，强调高质量发展是首要任务，同时要推进全体人民共同富裕，加快构建新发展格局，推动经济社会持续健康发展。</div>
-        <div class="politics-point">把握全面建设社会主义现代化国家的目标要求和发展方向</div>
+        <div class="politics-header-row">
+          <span class="cat-tag">重要会议/文件核心表述</span>
+          <span class="freq-tag">高频</span>
+        </div>
+        <div class="politics-title">2026年全国两会政府工作报告关键词</div>
+        <div class="politics-content">2026年全国两会于3月在北京召开，政府工作报告强调了高质量发展、科技创新、乡村振兴等关键词。</div>
+        <div class="politics-mnemonic">
+          <span class="mnemonic-label">速记</span>
+          两会高质量，科技乡村兴。
+        </div>
+        <div class="politics-confusion">
+          <span class="confusion-label">避坑</span>
+          易与历年的两会关键词混淆，注意每年的重点不同。
+        </div>
       </div>
     </div>
     <div class="politics-card">
       <div class="politics-num">6</div>
       <div class="politics-body">
-        <div class="politics-category"><span class="cat-tag">最新时政热点</span></div>
-        <div class="politics-title">2026年全国两会重点议题</div>
-        <div class="politics-content">2026年全国两会期间，重点关注了经济复苏策略、科技创新驱动发展战略、乡村振兴政策调整等方面。会议还讨论了如何进一步优化营商环境以促进民营企业健康发展等问题。</div>
-        <div class="politics-point">关注两会期间关于经济、科技、乡村等领域的最新政策动向</div>
+        <div class="politics-header-row">
+          <span class="cat-tag">重大政策/事件的时间节点</span>
+          <span class="freq-tag">高频</span>
+        </div>
+        <div class="politics-title">2026年中国首次火星采样返回任务成功发射</div>
+        <div class="politics-content">2026年5月，中国首次火星采样返回任务“天问三号”成功发射，标志着中国航天事业迈上新台阶。</div>
+        <div class="politics-mnemonic">
+          <span class="mnemonic-label">速记</span>
+          五月份，天问三号火星行。
+        </div>
+        <div class="politics-confusion">
+          <span class="confusion-label">避坑</span>
+          容易与嫦娥探月任务混淆，注意区分不同的太空探索任务。
+        </div>
       </div>
     </div>
-  <div class="motivation">学好政治理论，为实现中华民族伟大复兴贡献智慧和力量！</div>
+  <div class="motivation">学好政治理论，为国家发展贡献智慧和力量！</div>
 </div>
 <div class="footer">政治理论 · 公考必备 · 每日积累，厚积薄发</div>
 </body>
